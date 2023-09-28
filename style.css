@@ -15,13 +15,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0a2584; /* Change to your preferred background color */
-  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #0a2584;
+  padding: 10px 20px;
 }
 
 /* Style for the logo */
 .logo img {
-  max-width: 100px; /* Adjust the logo size as needed */
+  max-width: 100px;
   height: auto;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .nav-links li {
-  margin-right: 20px; /* Adjust the spacing between links as needed */
+  margin-right: 20px;
 }
 
 .nav-links li:last-child {
@@ -41,13 +41,13 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #fff; /* Change the link color */
+  color: #fff;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ff9900; /* Change the link color on hover */
+  color: #ff9900;
 }
 
 /* Style for the menu toggle button */
@@ -60,7 +60,7 @@ body {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #fff; /* Change the button color */
+  background-color: #fff;
   margin: 3px 0;
 }
 
@@ -73,10 +73,10 @@ body {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #333; /* Change the background color */
+    background-color: #333;
     position: absolute;
-    top: 60px; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the right position as needed */
+    top: 60px;
+    right: 20px;
     z-index: 1;
     padding: 10px;
   }
@@ -92,14 +92,14 @@ body {
 
 /* Style for the hero section */
 .hero {
-  background-color: #0a2584; /* Background color for the hero section */
+  background-color: #0a2584;
   padding: 50px 0;
   text-align: center;
 }
 
 /* Style for the hero content */
 .hero-content {
-  flex-direction: column; /* Stack items vertically on small screens */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -107,22 +107,22 @@ body {
 
 /* Style for the hero text */
 .hero-text {
-  text-align: center; /* Center the text on small screens */
-  max-width: 100%; /* Make the text width 100% on small screens */
-  margin: 0 auto; /* Center align the text */
-  padding: 0 20px; /* Add some padding on the sides for small screens */
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .hero-text h1 {
   margin-top: -30px;
-  font-size: 36px; /* Reduce the font size for smaller screens */
+  font-size: 36px;
   margin-bottom: 10px;
   color: #fff;
 }
 
 /* Style for the hero image */
 .hero-image {
-  max-width: 90%; /* Make the image width 100% on small screens */
+  max-width: 90%;
 }
 
 .hero-image img {
@@ -133,23 +133,23 @@ body {
 
 /* Style for the hero buttons */
 .hero-buttons {
-  flex-direction: column; /* Stack buttons vertically on small screens */
+  flex-direction: column;
   align-items: center;
-  margin-top: 20px; /* Reduce top margin for small screens */
-  padding: 0; /* Remove left padding on small screens */
+  margin-top: 20px;
+  padding: 0;
 }
 
 .btn {
   padding: 10px 20px;
-  background-color: #f0f411; /* Button background color */
-  color: #000000; /* Button text color */
+  background-color: #f0f411;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  text-align: center; /* Center the button text */
-  width: 100%; /* Make the button width 100% on small screens */
-  margin-bottom: 10px; /* Add some bottom margin for small screens */
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 /* No hover effect on small screens */
@@ -178,11 +178,11 @@ body {
   }
 
   .btn:hover {
-    background-color: #ff9900; /* Button background color on hover */
+    background-color: #ff9900;
   }
 }
 
-/* heading text */
+/* Heading text */
 .heading-text {
   font-size: 42px;
   font-family: "inter";
@@ -192,14 +192,14 @@ body {
 
 /* Style for the services section */
 .services {
-  background-color: #fff; /* Background color for the hero section */
+  background-color: #fff;
   padding: 50px 0;
   text-align: center;
 }
 
 /* Style for the hero content */
 .services-content {
-  flex-direction: column; /* Stack items vertically on small screens */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -207,15 +207,15 @@ body {
 
 /* Style for the hero text */
 .services-text {
-  text-align: center; /* Center the text on small screens */
-  max-width: 100%; /* Make the text width 100% on small screens */
-  margin: 0 auto; /* Center align the text */
-  padding: 0 20px; /* Add some padding on the sides for small screens */
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .services-text h1 {
   margin-top: 10px;
-  font-size: 36px; /* Reduce the font size for smaller screens */
+  font-size: 36px;
   margin-bottom: 20px;
   color: #f0f411;
 }
@@ -234,11 +234,9 @@ body {
   }
 }
 
-/* service card */
-
+/* Service card */
 .services-card-container {
-  background-color: #fff; /* Background color for the hero section */
-  /* padding: 50px 0; */
+  background-color: #fff;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -247,20 +245,20 @@ body {
 .services-card-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: center; /* Center align cards on smaller screens */
 }
 
 .service-card {
-  /* background-color: ; */
-  width: 190px;
-  height: 240px;
-  margin: 50px 10px 15px 10px;
-  /* padding: 10px; */
+  width: 210px;
+  height: 250px;
+  margin: 15px;
   border: 1px solid #ccc;
 }
 
 .service-card img {
-  width: 190px;
-  height: 240px;
+  width: 100%;
+  height: 100%;
 }
 
 .card-btn {
@@ -273,7 +271,6 @@ body {
 }
 
 /* Customer’s Testimonials */
-
 .cus-container {
   width: 100%;
   display: flex;
@@ -284,16 +281,19 @@ body {
 .cus-sub {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; /* Allow testimonials to wrap on smaller screens */
+  justify-content: center; /* Center align testimonials on smaller screens */
 }
 
 .cas-image img {
-  width: 270px;
-  margin-left: 10px;
+  width: 100%;
+  max-width: 300px; /* Limit image width on smaller screens */
+  margin: 10px;
 }
 
 .cas-text {
   text-align: center;
-  padding: 60px 10px 0 0;
+  padding: 10px;
   font-size: 18px;
   color: #0a2584;
 }
