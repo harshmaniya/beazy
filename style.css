@@ -114,7 +114,7 @@ body {
 }
 
 .hero-text h1 {
-    margin-top: -30px;
+  margin-top: -30px;
   font-size: 36px; /* Reduce the font size for smaller screens */
   margin-bottom: 10px;
   color: #fff;
@@ -126,7 +126,7 @@ body {
 }
 
 .hero-image img {
-    padding: 10%;
+  padding: 10%;
   max-width: 100%;
   margin-left: 20px;
 }
@@ -180,4 +180,120 @@ body {
   .btn:hover {
     background-color: #ff9900; /* Button background color on hover */
   }
+}
+
+/* heading text */
+.heading-text {
+  font-size: 42px;
+  font-family: "inter";
+  padding: 3% 0%;
+  color: #0a2584;
+}
+
+/* Style for the services section */
+.services {
+  background-color: #fff; /* Background color for the hero section */
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Style for the hero content */
+.services-content {
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for the hero text */
+.services-text {
+  text-align: center; /* Center the text on small screens */
+  max-width: 100%; /* Make the text width 100% on small screens */
+  margin: 0 auto; /* Center align the text */
+  padding: 0 20px; /* Add some padding on the sides for small screens */
+}
+
+.services-text h1 {
+  margin-top: 10px;
+  font-size: 36px; /* Reduce the font size for smaller screens */
+  margin-bottom: 20px;
+  color: #f0f411;
+}
+
+/* No hover effect on small screens */
+@media (min-width: 768px) {
+  .services-content {
+    flex-direction: row;
+  }
+
+  .services-text {
+    text-align: left;
+    max-width: 700px;
+    margin-right: auto;
+    padding-left: 200px;
+  }
+}
+
+/* service card */
+
+.services-card-container {
+  background-color: #fff; /* Background color for the hero section */
+  /* padding: 50px 0; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-card-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.service-card {
+  /* background-color: ; */
+  width: 210px;
+  height: 250px;
+  margin: 50px 15px 15px 15px;
+  /* padding: 10px; */
+  border: 1px solid #ccc;
+}
+
+.service-card img {
+  width: 210px;
+  height: 250px;
+}
+
+.card-btn {
+  padding: 10px;
+  font-size: 24px;
+  background-color: #0a2584;
+  color: #f0f411;
+  border-style: none;
+  border-radius: 5px;
+}
+
+/* Customer’s Testimonials */
+
+.cus-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.cus-sub {
+  display: flex;
+  flex-direction: row;
+}
+
+.cas-image img {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.cas-text {
+  text-align: center;
+  padding: 60px 10px 0 0;
+  font-size: 18px;
+  color: #0a2584;
 }
