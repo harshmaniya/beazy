@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a2584; /* Change to your preferred background color */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Style for the logo */
+.logo img {
+  max-width: 100px; /* Adjust the logo size as needed */
+  height: auto;
+}
+
+/* Style for the navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px; /* Adjust the spacing between links as needed */
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* Change the link color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff9900; /* Change the link color on hover */
+}
+
+/* Style for the menu toggle button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff; /* Change the button color */
+  margin: 3px 0;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333; /* Change the background color */
+    position: absolute;
+    top: 60px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    z-index: 1;
+    padding: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+}
+
+/* Style for the hero section */
+.hero {
+  background-color: #0a2584; /* Background color for the hero section */
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Style for the hero content */
+.hero-content {
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for the hero text */
+.hero-text {
+  text-align: center; /* Center the text on small screens */
+  max-width: 100%; /* Make the text width 100% on small screens */
+  margin: 0 auto; /* Center align the text */
+  padding: 0 20px; /* Add some padding on the sides for small screens */
+}
+
+.hero-text h1 {
+    margin-top: -30px;
+  font-size: 36px; /* Reduce the font size for smaller screens */
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Style for the hero image */
+.hero-image {
+  max-width: 90%; /* Make the image width 100% on small screens */
+}
+
+.hero-image img {
+    padding: 10%;
+  max-width: 100%;
+  margin-left: 20px;
+}
+
+/* Style for the hero buttons */
+.hero-buttons {
+  flex-direction: column; /* Stack buttons vertically on small screens */
+  align-items: center;
+  margin-top: 20px; /* Reduce top margin for small screens */
+  padding: 0; /* Remove left padding on small screens */
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #f0f411; /* Button background color */
+  color: #000000; /* Button text color */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center the button text */
+  width: 100%; /* Make the button width 100% on small screens */
+  margin-bottom: 10px; /* Add some bottom margin for small screens */
+}
+
+/* No hover effect on small screens */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+  }
+
+  .hero-text {
+    text-align: left;
+    max-width: 700px;
+    margin-right: auto;
+    padding-left: 200px;
+  }
+
+  .hero-image {
+    margin-top: 100px;
+    max-width: 700px;
+    padding-right: 110px;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    margin-top: 50px;
+    padding-left: 100px;
+  }
+
+  .btn:hover {
+    background-color: #ff9900; /* Button background color on hover */
+  }
+}
