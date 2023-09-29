@@ -17,6 +17,24 @@ body {
   align-items: center;
   background-color: #0a2584;
   padding: 10px 20px;
+  position: sticky;
+  top: 0
+}
+
+/* Style for the logo */
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Style for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a2584;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the logo */
@@ -29,10 +47,13 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
   margin-right: 20px;
+  padding: 5px;
 }
 
 .nav-links li:last-child {
@@ -62,6 +83,7 @@ body {
   height: 3px;
   background-color: #fff;
   margin: 3px 0;
+  border-radius: 3px;
 }
 
 /* Media query for responsive design */
@@ -79,16 +101,28 @@ body {
     right: 20px;
     z-index: 1;
     padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
+  /* Show the navigation links when the .show class is added */
   .nav-links.show {
     display: flex;
   }
 
   .nav-links a {
     margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #ff9900;
   }
 }
+
 
 /* Style for the hero section */
 .hero {
