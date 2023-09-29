@@ -13,18 +13,20 @@
         <div class="logo">
             <img src="./skins/logo.png" alt="Logo">
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
+            <li id="toggleButton"><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
-        <div class="menu-toggle">
+        <div class="menu-toggle" id="menuToggle">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
     </nav>
+
+
     <div class="hero">
         <div class="hero-content">
             <div class="hero-text">
@@ -54,7 +56,7 @@
         <h1 class="heading-text">
             SERVICES
         </h1>
-        <div class="services-content">
+        <div class="services-content" id="content">
             <div class="services-text">
                 <h1>
                     Our Services include
@@ -128,6 +130,53 @@
             </p>
         </div>
     </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select the elements
+            const navLinks = document.querySelector('#navLinks');
+            const menuToggle = document.querySelector('#menuToggle');
+
+            // Add a click event listener to the menu toggle button
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+
+
 </body>
+
+
 
 </html>
