@@ -10,6 +10,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Customize the scrollbar */
+body::-webkit-scrollbar {
+  width: 0px; /* Set the scrollbar width */
+}
+
 /* Style for the navigation bar */
 .navbar {
   display: flex;
@@ -186,34 +191,113 @@ body {
   margin-bottom: 10px;
 }
 
-/* No hover effect on small screens */
-@media (min-width: 768px) {
-  .hero-content {
-    flex-direction: row;
-  }
+/* Media Queries */
 
+/* Small screens (up to 767px) */
+@media (max-width: 767px) {
   .hero-text {
-    text-align: left;
-    max-width: 700px;
-    margin-right: auto;
-    padding-left: 200px;
+    padding: 0 10px; /* Adjust padding for smaller screens */
   }
 
   .hero-image {
-    margin-top: 100px;
+    margin-top: 30px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* Medium screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    margin-top: 30px;
+    text-align: left;
     max-width: 700px;
-    padding-right: 110px;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .hero-text h1{
+    font-size: 42px;
+  }
+
+  .hero-image {
+    margin-top: -50px;
+    max-width: 100%;
   }
 
   .hero-buttons {
     flex-direction: row;
-    margin-top: 50px;
-    padding-left: 100px;
+    margin: 50px;
   }
 
   .btn:hover {
     background-color: #ff9900;
   }
+}
+
+/* Large screens (992px and above) */
+@media (min-width: 992px) {
+  /* Style for the hero section */
+.hero {
+  padding: 50px 0;
+}
+
+/* Style for the hero content */
+.hero-content {
+  display: flex;
+  flex-direction: row; /* Change to row to align horizontally */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the hero text */
+.hero-text {
+  max-width: 50%;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center; /* Add text-align to center the text */
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Style for the hero image */
+.hero-image {
+  max-width: 50%;
+  padding: 0;
+}
+
+.hero-image img {
+  padding: 10%;
+  max-width: 100%;
+}
+
+/* Style for the hero buttons */
+.hero-buttons {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #f0f411;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 }
 
 /* Heading text */
@@ -330,4 +414,225 @@ body {
   padding: 10px;
   font-size: 18px;
   color: #0a2584;
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+  .cus-container {
+    padding-top: 20px; /* Reduce top padding on small screens */
+  }
+  
+  .cas-image img {
+    max-width: 200px; /* Further limit image width on small screens */
+    margin: 5px; /* Reduce image margin on small screens */
+  }
+  
+  .cas-text {
+    margin-top: 10%;
+    font-size: 16px; /* Reduce font size on small screens */
+  }
+}
+
+/* Medium screens (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cus-container {
+    padding-top: 30px; /* Adjust top padding for medium screens */
+  }
+  
+  .cas-image img {
+    max-width: 400px; /* Adjust image width for medium screens */
+    margin: 10px; /* Restore image margin for medium screens */
+  }
+  
+  .cas-text {
+    font-size: 24px; /* Adjust font size for medium screens */
+  }
+}
+
+/* Large screens (greater than 1024px) */
+@media (min-width: 1025px) {
+  .cus-container {
+    padding-top: 50px; /* Restore top padding for large screens */
+  }
+  
+  .cas-image img {
+    max-width: 500px; /* Adjust image width for large screens */
+    margin: 10px; /* Restore image margin for large screens */
+  }
+  
+  .cas-text {
+    font-size: 32px; /* Adjust font size for large screens */
+  }
+}
+
+
+
+
+/* Large screens (1440px and above) */
+@media (min-width: 1440px) {
+  /* Style for the hero section */
+.hero {
+  padding: 50px 0;
+}
+
+/* Style for the hero content */
+.hero-content {
+  display: flex;
+  flex-direction: row; /* Change to row to align horizontally */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the hero text */
+.hero-text {
+  max-width: 50%;
+  margin-right: 5%;
+  padding: 0 20px;
+  text-align: center; /* Add text-align to center the text */
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Style for the hero image */
+.hero-image {
+  margin-left: 7%;
+  max-width: 50%;
+  padding: 0;
+  right: 10px;
+}
+
+.hero-image img {
+  padding: 10%;
+  max-width: 100%;
+}
+
+/* Style for the hero buttons */
+.hero-buttons {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #f0f411;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+
+/* Heading text */
+.heading-text {
+  font-size: 42px;
+  font-family: "inter";
+  padding: 1% 0%;
+  color: #0a2584;
+}
+
+/* Style for the services section */
+.services {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Style for the hero content */
+.services-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for the hero text */
+.services-text {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.services-text h1 {
+  margin-top: 10px;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f0f411;
+}
+
+
+/* Service card */
+.services-card-container {
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-card-row {
+  column-gap: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: center; /* Center align cards on smaller screens */
+}
+
+.s-card{
+  margin-bottom: 50px;
+}
+
+.service-card {
+  width: 250px;
+  height: 290px;
+  margin: 15px;
+  /* margin-bottom: ; */
+  /* border: 1px solid #ccc; */
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-btn {
+  padding: 10px;
+  font-size: 24px;
+  background-color: #0a2584;
+  color: #f0f411;
+  border-style: none;
+  border-radius: 5px;
+}
+
+/* Customer’s Testimonials */
+.cus-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.cas-image img {
+  width: 100%;
+  max-width: 80%; /* Limit image width on smaller screens */
+  margin: 10px;
+}
+
+.cas-text {
+  margin-top: 10%;
+  text-align: center;
+  padding: 10px;
+  font-size: 42px;
+  color: #0a2584;
+}
+
 }
